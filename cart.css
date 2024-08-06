@@ -1,0 +1,27 @@
+#cart{
+    margin: 10%;
+    .item{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid black;
+
+    }
+    .item img{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+    .item p{
+        margin: 0;
+    }
+    .item button{
+        width: 20px;
+        height: 20px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}

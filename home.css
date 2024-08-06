@@ -1,0 +1,125 @@
+/* Container Styling */
+.blog {
+    margin: 20px auto;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    background-color: #f9f9f9;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog .content{
+    padding: 10px;
+}
+
+/* Text Elements */
+.blog h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.blog h2 {
+    font-size: 2em;
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+.blog p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Images */
+.blog img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Links */
+.blog a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.blog a:hover {
+    text-decoration: underline;
+    color: #2980b9;
+}
+
+/* Tags */
+.blog p.tags {
+    margin-top: 15px;
+    font-size: 1em;
+    color: #888;
+}
+
+.blog p.tags span {
+    background-color: #e7e7e7;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin-right: 5px;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .blog {
+        padding: 30px;
+    }
+
+    .blog h1 {
+        font-size: 2em;
+    }
+
+    .blog h2 {
+        font-size: 1.5em;
+    }
+}
+
+/* Flex Layout for Larger Screens */
+@media (min-width: 800px) {
+    .blog {
+        flex-direction: row;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .blog img {
+        max-width: 50%;
+        padding: 10px;
+        margin-right: 20px;
+        margin-bottom: 0;
+       
+    }
+
+
+    .blog div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .blog h1,
+    .blog h2,
+    .blog p {
+        margin: 0;
+    }
+
+    .blog p {
+        margin-bottom: 10px;
+    }
+}
+
+.blog img{
+    border-radius: 10px;
+}
