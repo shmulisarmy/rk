@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="icon" href="https://rollingkosher.pythonanywhere.com/static/images/logo.png">
+
+
+    <title>rolling kosher</title>
+    <script>
+        let menu = JSON.parse({{menu|tojson}})
+    </script>
+    <link rel="stylesheet" href="/static/main.css?v=1.2">
+    <link rel="stylesheet" href="/static/cart.css?v=1.4">
+    <link rel="stylesheet" href="/static/home.css?v=1.2">
+    <script src="/static/react.js?v=1.2"></script>
+    <!-- <script src="/static/data.js?v=1.2"></script> -->
+    <script src="/static/utils.js?v=1.2"></script>
+    <script defer src="/static/main.jsx?v=1.2"></script>
+    <style>
+        footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            border-top: 2px solid #ccc;
+            padding: 10px 0;
+            background-color: #f0f8ff;
+
+            a{
+                text-decoration: none;
+                color: black;
+                font-weight: 600;
+                transition: color 0.2s ease-in-out;
+
+                &:hover{
+                    color: royalblue;
+                    text-decoration: underline;
+                }
+
+                &:active{
+                    color: darkblue;
+                }
+
+                &:visited{
+                    color: darkslateblue;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <footer>
+        <section>
+            <h2>other sites</h2>
+            <ul>
+
+                <li><a href="https://www.google.com/">Google</a></li>
+                <li><a href="https://www.facebook.com/">Facebook</a></li>
+                <li><a href="https://www.reddit.com/">Reddit</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>social</h2>
+            <ul>
+                <li><a href="https://www.twitter.com/">Twitter</a></li>
+                <li><a href="https://www.instagram.com/">Instagram</a></li>
+                <li><a href="https://www.youtube.com/">Youtube</a></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
